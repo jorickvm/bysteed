@@ -19,6 +19,13 @@ Jorick's personal maker site: a landing page for his apps, later a blog. "Steed"
 - The homepage preview is `assets/og/home.png` (1200×630), drawn from the icons in `assets/icons/` by `swift scripts/build_og_home.swift . assets/og/home.png`. Redraw it when an app is added or an icon changes; the app list and order are in the script.
 - Google Search Console has the domain property `bysteed.com`, verified by DNS.
 
+## Analytics
+
+- Cloudflare Web Analytics counts page loads: no cookies, no fingerprinting, no IP addresses kept. The site is `bysteed.com` in Jorick's Cloudflare account; atlasdays.app is a separate site there.
+- `assets/analytics.js` holds the site token and loads Cloudflare's beacon. Every page loads it with `<script defer src="/assets/analytics.js"></script>` in its `<head>`, except the privacy pages: they state that the apps have no analytics, and must not trigger an analytics request themselves. Add the tag to every new page that is not a privacy page. Shift's product pages get it from the Shift generator.
+- `?notrack` on any page stops counting that browser; `?notrack=off` turns it back on. Jorick uses it on his own devices.
+- Localhost visits are never counted: Cloudflare only accepts reports from `bysteed.com`.
+
 ## Content rules
 
 - Name on the page: "Jorick", never the full or last name.
