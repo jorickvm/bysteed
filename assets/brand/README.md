@@ -31,3 +31,7 @@ For the monochrome favicon:
 Use `steed-high-summit-bitcoin-orange.svg` in either example for the orange treatment. The adaptive file follows `prefers-color-scheme`; use the fixed black or white files when the page surface does not follow system appearance. The black and white values match the approved near-black/off-white preview rather than pure `#000000`/`#FFFFFF`.
 
 Preserve the square viewBox, aspect ratio and path geometry. If inlining instead of using an external image, give each instance unique title and mask IDs and update its references. Keep this maker mark separate from the app icons in `assets/icons/`.
+
+## Where it is used
+
+The adaptive monochrome mark is the favicon of the root pages (`index.html`, `404.html`) and sits before the homepage heading at 36px. The app pages under `shift/` and `stallion/` keep their own app icons.

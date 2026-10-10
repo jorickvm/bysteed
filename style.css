@@ -40,6 +40,14 @@ h1 {
   letter-spacing: -0.02em;
 }
 
+h1:has(.mark) {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+h1 .mark { flex: none; }
+
 h1 + .apps { margin-top: 48px; }
 
 .intro {
