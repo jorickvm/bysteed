@@ -43,7 +43,7 @@ func text(_ s: String, _ font: NSFont, _ color: NSColor, top: CGFloat) {
     a.draw(at: NSPoint(x: (CGFloat(W) - sz.width) / 2, y: CGFloat(H) - top - sz.height))
 }
 text("Apps by Steed", .systemFont(ofSize: 76, weight: .bold), hex(0x1c1c1e), top: 356)
-text("Independent iPhone apps by Jorick", .systemFont(ofSize: 34, weight: .regular), hex(0x6e6e73), top: 458)
+text("Independent iPhone apps, made in Georgia", .systemFont(ofSize: 34, weight: .regular), hex(0x6e6e73), top: 458)
 
 NSGraphicsContext.current = nil
 try! rep.representation(using: .png, properties: [:])!.write(to: URL(fileURLWithPath: out))

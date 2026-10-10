@@ -31,7 +31,10 @@ Jorick's personal maker site: a landing page for his apps, later a blog. "Steed"
 - Name on the page: "Jorick", never the full or last name.
 - No em-dashes in user-facing copy.
 - Each app's one-liner is approved by Jorick; do not reword it without asking.
-- Icons in `assets/icons/` are 192px exports of each app's App Store icon, with a `-dark` variant where the app has one. Do not commit 1024px originals.
+- Icons in `assets/icons/` are 192px exports of each app's App Store icon, square and full-bleed (the page rounds the corners), each with a `-dark` variant for dark mode. Do not commit 1024px originals.
+  - `atlasdays-dark.png` is the app's dark icon cropped 32px per side at 1024px, because the source has its own light rim and corners baked in.
+  - `stallion-dark.png` exists only on the web, since the app has a single icon: its transparent `Logo` on Stallion's dark card colour (`#1A2333`), in the horse's position in the light icon. Replace it with an export if the app gains a dark icon.
+  - Jorick asked for both variants on 2026-10-10.
 
 ## URL layout
 
