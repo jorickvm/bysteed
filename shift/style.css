@@ -1,4 +1,4 @@
-/* Shift's product page. Its own look, after the app: system background, rounded type, and the work/rest/repeat colors. The privacy and support pages use privacy/styles.css instead. */
+/* Shift's product page. Its own look, after the app: system background, rounded type, the three dots and the work/rest/repeat colors. The privacy and support pages use privacy/styles.css instead. */
 :root {
   color-scheme: light;
   --bg: #ffffff;
@@ -42,25 +42,19 @@ h1, h2, p { margin: 0; }
 
 header { text-align: center; }
 
-.icon {
-  width: 96px;
-  height: 96px;
-  border-radius: 22px;
-  box-shadow: 0 0 0 1px var(--card);
+.dots {
+  display: block;
+  width: 72px;
+  height: auto;
+  margin: 0 auto;
 }
 
 h1 {
-  margin-top: 16px;
+  margin-top: 14px;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.03em;
-}
-
-.subtitle {
-  margin-top: 6px;
-  font-size: 21px;
-  font-weight: 600;
 }
 
 .lede {
@@ -115,9 +109,10 @@ section p, .list { color: var(--muted); }
 
 .steps {
   display: flex;
+  justify-content: center;
   gap: 16px;
-  margin-bottom: 12px;
-  color: var(--text) !important;
+  margin-top: 8px;
+  font-size: 21px;
   font-weight: 600;
 }
 
