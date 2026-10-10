@@ -16,6 +16,7 @@ Jorick's personal maker site: a landing page for his apps, later a blog. "Steed"
 - `sitemap.xml` is built from the pages by `python3 scripts/build_sitemap.py`: rerun it after adding, moving or removing a page; `--check` fails when it is stale. It skips any page with a robots `noindex`, and stops on a page whose canonical URL does not match its address.
 - `robots.txt` allows everything and names the sitemap. `llms.txt` is a hand-written summary of the site for language models; update it when an app's pages or status change.
 - Product pages carry Open Graph tags for link previews, with a 512px app icon from `assets/og/`.
+- The homepage preview is `assets/og/home.png` (1200×630), drawn from the icons in `assets/icons/` by `swift scripts/build_og_home.swift . assets/og/home.png`. Redraw it when an app is added or an icon changes; the app list and order are in the script.
 - Google Search Console has the domain property `bysteed.com`, verified by DNS.
 
 ## Content rules

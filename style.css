@@ -91,11 +91,22 @@ a.app:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
   white-space: nowrap;
 }
 
+.intro .flag {
+  vertical-align: -1px;
+  margin-left: 2px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px var(--line);
+}
+
 footer {
   margin-top: 48px;
   color: var(--muted);
   font-size: 14px;
 }
+
+footer p { margin: 0; }
+footer a { color: inherit; }
+footer a:hover { color: var(--text); }
 
 @media (max-width: 480px) {
   main { padding-top: 64px; }
