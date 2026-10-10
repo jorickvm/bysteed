@@ -177,12 +177,10 @@ footer nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px 24px;
-  margin-bottom: 8px;
   font-weight: 600;
 }
 
 footer nav a { text-decoration: none; }
-footer p a { color: inherit; }
 
 /* bysteed's light and dark switch: one word naming the other theme (/assets/theme.js), styled as the links beside it. */
 .theme-toggle {

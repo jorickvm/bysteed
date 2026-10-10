@@ -134,10 +134,7 @@ footer a { color: inherit; }
 
 .theme-toggle:hover { color: var(--text); }
 
-.footer-end {
-  display: flex;
-  gap: 16px;
-}
+footer .contact { flex-basis: 100%; }
 footer a:hover { color: var(--text); }
 
 @media (max-width: 480px) {
