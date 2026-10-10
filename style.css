@@ -4,18 +4,21 @@
   --muted: #6e6e73;
   --line: #e5e5e2;
   --hover: #f0f0ec;
-  color-scheme: light dark;
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #111112;
-    --text: #f2f2f2;
-    --muted: #98989d;
-    --line: #2a2a2c;
-    --hover: #1c1c1e;
-  }
+/* /assets/theme.js sets data-theme from the system or the visitor's choice. */
+:root[data-theme="dark"] {
+  --bg: #111112;
+  --text: #f2f2f2;
+  --muted: #98989d;
+  --line: #2a2a2c;
+  --hover: #1c1c1e;
+  color-scheme: dark;
 }
+
+:root[data-theme="dark"] .light-only,
+:root:not([data-theme="dark"]) .dark-only { display: none; }
 
 * { box-sizing: border-box; }
 
@@ -86,7 +89,6 @@ a.app:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
   box-shadow: 0 0 0 1px var(--line);
 }
 
-.app picture { display: flex; flex: none; }
 .app .text { flex: 1; min-width: 0; }
 
 .app .name { display: block; font-weight: 600; }
@@ -119,6 +121,18 @@ footer {
 }
 
 footer a { color: inherit; }
+
+.theme-switch button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.theme-switch button:hover,
+.theme-switch button[aria-pressed="true"] { color: var(--text); }
 footer a:hover { color: var(--text); }
 
 @media (max-width: 480px) {
