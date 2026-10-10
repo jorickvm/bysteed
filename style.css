@@ -70,8 +70,8 @@ h1 + .apps { margin-top: 48px; }
 .app {
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 16px 8px;
+  gap: 14px;
+  padding: 12px 8px;
   margin: 0 -8px;
   border-radius: 12px;
   color: inherit;
@@ -83,9 +83,9 @@ a.app:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
 
 .app img {
   flex: none;
-  width: 64px;
-  height: 64px;
-  border-radius: 14px;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
   box-shadow: 0 0 0 1px var(--line);
 }
 
@@ -99,15 +99,6 @@ a.app:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
   color: var(--muted);
   font-size: 15px;
   white-space: nowrap;
-}
-
-.nowrap { white-space: nowrap; }
-
-.intro .flag {
-  vertical-align: 0;
-  margin-left: 2px;
-  border-radius: 2px;
-  box-shadow: 0 0 0 1px var(--line);
 }
 
 footer {

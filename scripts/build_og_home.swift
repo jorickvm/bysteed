@@ -22,7 +22,7 @@ NSRect(x: 0, y: 0, width: W, height: H).fill()
 let size: CGFloat = 192, gap: CGFloat = 56
 let icons = ["atlasdays", "shift", "stallion"]
 let rowW = size * 3 + gap * 2
-let top: CGFloat = 112
+let top: CGFloat = 150
 for (i, name) in icons.enumerated() {
     let img = NSImage(contentsOfFile: "\(root)/assets/icons/\(name).png")!
     let r = NSRect(x: (CGFloat(W) - rowW) / 2 + CGFloat(i) * (size + gap), y: CGFloat(H) - top - size,
@@ -42,8 +42,7 @@ func text(_ s: String, _ font: NSFont, _ color: NSColor, top: CGFloat) {
     let sz = a.size()
     a.draw(at: NSPoint(x: (CGFloat(W) - sz.width) / 2, y: CGFloat(H) - top - sz.height))
 }
-text("Apps by Steed", .systemFont(ofSize: 76, weight: .bold), hex(0x1c1c1e), top: 356)
-text("Independent iPhone apps, made in Georgia", .systemFont(ofSize: 34, weight: .regular), hex(0x6e6e73), top: 458)
+text("Apps by Steed", .systemFont(ofSize: 76, weight: .bold), hex(0x1c1c1e), top: 394)
 
 NSGraphicsContext.current = nil
 try! rep.representation(using: .png, properties: [:])!.write(to: URL(fileURLWithPath: out))
