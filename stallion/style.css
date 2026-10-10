@@ -1,11 +1,11 @@
-/* Stallion's own look: its palette from the app's JournalTheme, and Nunito, its typeface, served from this folder (SIL Open Font License, OFL.txt). */
-@font-face { font-family: "Nunito"; src: url("/stallion/Nunito.ttf") format("truetype"); font-weight: 200 1000; font-display: swap; }
+/* Stallion's own look: its palette from the app's JournalTheme, and Quicksand, its typeface, served from this folder (SIL Open Font License, OFL.txt). */
+@font-face { font-family: "Quicksand"; src: url("/stallion/Quicksand.ttf") format("truetype"); font-weight: 300 700; font-display: swap; }
 :root { --bg: #FAFBFF; --card: #EDF1FA; --text: #141A24; --muted: #5C6273; --accent: #255DDD; color-scheme: light; }
 @media (prefers-color-scheme: dark) {
   :root { --bg: #101722; --card: #1A2333; --text: #EEF1F7; --muted: #9AA3B5; --accent: #88ABFF; color-scheme: dark; }
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 "Nunito", ui-rounded, -apple-system, system-ui, sans-serif; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 "Quicksand", ui-rounded, -apple-system, system-ui, sans-serif; }
 main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
 header { text-align: center; margin-bottom: 36px; }
 header img { width: 132px; height: auto; }
