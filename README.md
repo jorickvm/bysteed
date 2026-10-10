@@ -27,4 +27,4 @@ At Porkbun, on Porkbun's nameservers.
 - Apex `A` and `AAAA`: GitHub Pages' addresses
 - `www` `CNAME` to `jorickvm.github.io`
 - TXT `_github-pages-challenge-jorickvm`: GitHub's domain verification. Keep it.
-- `MX` and SPF TXT: Porkbun email forwarding (no forwards set up yet)
+- `MX`, SPF TXT, three DKIM `CNAME`s (`protonmail*._domainkey`), `_dmarc` TXT and the `protonmail-verification` TXT: email on Proton Mail. Values come from Proton's domain settings.
