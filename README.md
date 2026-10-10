@@ -30,7 +30,7 @@ Jorick's personal maker site: a landing page for his apps, later a blog. "Steed"
 
 - `assets/theme.js` sets `<html data-theme="light|dark">` from the system, or from the visitor's choice, which is kept for the whole site in `localStorage` (`bysteed-theme`). Choosing what the system already shows clears the choice. Every page loads it in its `<head>` without `defer`: `<script src="/assets/theme.js"></script>`.
 - Stylesheets key their dark colours on `:root[data-theme="dark"]`, never on `prefers-color-scheme`. The same goes for images: the root stylesheet's `.light-only` and `.dark-only` classes swap them, because a `<picture>` source with a colour-scheme media query ignores the visitor's choice.
-- Every page has a switch: buttons with `data-theme-choice="light"` and `"dark"`. It reads "Light / Dark" in the footer of the English pages, and is a sun and a moon on all of Shift's pages, which are in many languages.
+- Every page has a switch in its footer: one word naming the other theme ("Dark" in light mode, "Light" in dark mode), in the page's language. The markup is in `assets/theme.js`'s header comment. Shift's words per language live in `THEME_WORD` in the Shift repository's `scripts/build_product_pages.py`; its hand-written privacy and support pages use the same words.
 - `?theme=light` or `?theme=dark` shows a page in that theme without saving it.
 
 ## Content rules

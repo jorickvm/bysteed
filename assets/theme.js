@@ -1,7 +1,8 @@
 // Light and dark for bysteed.com. Load it in <head> without defer, so the theme is set before the first paint.
 // It always sets <html data-theme="light|dark">, and the stylesheets key their dark colours on that attribute.
 // A choice is kept for the whole site; choosing what the system already shows goes back to following the system.
-// Switch buttons anywhere on the page: <button type="button" data-theme-choice="light|dark">.
+// The switch is one button that names the other theme, both words in the markup and CSS showing the right one:
+//   <button type="button" class="theme-toggle" data-theme-toggle><span class="light-only">Dark</span><span class="dark-only">Light</span></button>
 // ?theme=light or ?theme=dark in the address shows that page in that theme without saving it.
 (function () {
   var KEY = 'bysteed-theme';
@@ -19,17 +20,11 @@
   } catch (e) {}
 
   function system() { return media.matches ? 'dark' : 'light'; }
+  function current() { return forced || chosen || system(); }
+  function apply() { root.dataset.theme = current(); }
 
-  function apply() {
-    var theme = forced || chosen || system();
-    root.dataset.theme = theme;
-    var buttons = document.querySelectorAll('[data-theme-choice]');
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].setAttribute('aria-pressed', String(buttons[i].dataset.themeChoice === theme));
-    }
-  }
-
-  function choose(theme) {
+  function toggle() {
+    var theme = current() === 'dark' ? 'light' : 'dark';
     forced = null;
     chosen = theme === system() ? null : theme;
     try {
@@ -40,10 +35,8 @@
   }
 
   apply();
-  document.addEventListener('DOMContentLoaded', apply);
   media.addEventListener('change', apply);
   document.addEventListener('click', function (event) {
-    var button = event.target.closest && event.target.closest('[data-theme-choice]');
-    if (button) choose(button.dataset.themeChoice);
+    if (event.target.closest && event.target.closest('[data-theme-toggle]')) toggle();
   });
 })();

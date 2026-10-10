@@ -184,41 +184,22 @@ footer nav {
 footer nav a { text-decoration: none; }
 footer p a { color: inherit; }
 
-/* Light and dark as a sun and a moon, so the switch needs no translation. */
-.theme-switch {
-  display: flex;
-  justify-content: center;
-  gap: 4px;
-  margin-top: 12px;
-}
-
-.theme-switch button {
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
+/* bysteed's light and dark switch: one word naming the other theme (/assets/theme.js). */
+.theme-toggle {
   padding: 0;
   border: 0;
-  border-radius: 50%;
   background: none;
-  color: var(--muted);
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
   cursor: pointer;
 }
 
-.theme-switch button:hover,
-.theme-switch button[aria-pressed="true"] { color: var(--text); }
-.theme-switch button[aria-pressed="true"] { background: var(--card); }
-.theme-switch button:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+.theme-toggle:hover { color: var(--text); }
+.theme-toggle:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 
-.theme-switch svg {
-  width: 20px;
-  height: 20px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
+:root[data-theme="dark"] .light-only,
+:root:not([data-theme="dark"]) .dark-only { display: none; }
 
 /* On a phone the screenshots scroll sideways instead of shrinking to thumbnails. */
 @media (max-width: 560px) {
