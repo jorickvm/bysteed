@@ -40,6 +40,8 @@ h1 {
   letter-spacing: -0.02em;
 }
 
+h1 + .apps { margin-top: 48px; }
+
 .intro {
   margin: 4px 0 48px;
   color: var(--muted);

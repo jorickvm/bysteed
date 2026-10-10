@@ -42,16 +42,23 @@ h1, h2, p { margin: 0; }
 
 header { text-align: center; }
 
+/* The app icon's lockup: small dots over the start of the word, sized from the title as on the privacy page. */
+.lockup {
+  --title: 40px;
+  display: inline-grid;
+  justify-items: start;
+  gap: calc(var(--title) * 0.2156);
+  direction: ltr;
+}
+
 .dots {
   display: block;
-  width: 72px;
+  width: calc(var(--title) * 0.7541);
   height: auto;
-  margin: 0 auto;
 }
 
 h1 {
-  margin-top: 14px;
-  font-size: 40px;
+  font-size: var(--title);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.03em;
@@ -110,10 +117,10 @@ section p.free { color: var(--text); font-weight: 600; }
 
 .steps {
   display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 8px;
-  font-size: 21px;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin-bottom: 12px;
+  color: var(--text) !important;
   font-weight: 600;
 }
 

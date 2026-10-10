@@ -144,3 +144,19 @@ a:focus-visible {
     --title: 30px;
   }
 }
+
+/* Back to the product page, as an iOS back button: a chevron and the page it returns to. Right-to-left text mirrors the chevron by itself. */
+.back {
+  justify-self: start;
+  margin-bottom: 6px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.back::before {
+  content: "‹";
+  margin-inline-end: 0.25em;
+  font-size: 1.35em;
+  line-height: 0;
+  vertical-align: -0.08em;
+}
