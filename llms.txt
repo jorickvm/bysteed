@@ -1,0 +1,26 @@
+# Apps by Steed
+
+> bysteed.com is the home of the iPhone apps made by Steed: Shift, Stallion and AtlasDays. Each app has a product page, a privacy policy and a support page here; AtlasDays has its own site.
+
+## Shift
+
+An interval timer for workouts, for iPhone and iPad. Set work, rest and rounds, tap Start. Free, with no ads, paywall, subscription, account, analytics or tracking. Workouts stay on the device.
+
+- [Shift](https://bysteed.com/shift/): product page, also in every App Store language under /shift/<code>/
+- [Shift privacy policy](https://bysteed.com/shift/privacy/)
+- [Shift support](https://bysteed.com/shift/support/): email shift@bysteed.com
+- [Shift on the App Store](https://apps.apple.com/app/id6805132734)
+
+## Stallion
+
+A training journal for Apple Health workouts, for iPhone. It shows each workout recorded by Apple Watch or another app and keeps a note per workout, or per day when a day has no workout. No account and no ads; notes stay on the iPhone, with optional backups to the user's own iCloud Drive. English only. Coming soon to the App Store.
+
+- [Stallion](https://bysteed.com/stallion/): product page
+- [Stallion privacy policy](https://bysteed.com/stallion/privacy/)
+- [Stallion support](https://bysteed.com/stallion/support/): email stallion@bysteed.com
+
+## AtlasDays
+
+Tracks visas, residency and travel days per country, including rules such as Schengen 90/180.
+
+- [AtlasDays](https://atlasdays.app)
