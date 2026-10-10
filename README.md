@@ -18,7 +18,7 @@ Jorick's personal maker site: a landing page for his apps, later a blog. "Steed"
 
 ## URL layout
 
-Per-app pages live under paths: `/<app>/`, `/<app>/privacy/`, `/<app>/support/`. Each app folder may carry its own styling; Shift's pages must look like Shift, never like AtlasDays or this landing page.
+Per-app pages live under paths: `/<app>/`, `/<app>/privacy/`, `/<app>/support/`. Translated pages go inside the app's folder, `/<app>/<code>/privacy/` and `/<app>/<code>/support/`, never in a language folder at the root. The app's own repo documents its pages (Shift: `Shift/AGENTS.md`). Each app folder may carry its own styling; Shift's pages must look like Shift, never like AtlasDays or this landing page.
 
 ## DNS
 
@@ -31,4 +31,4 @@ At Porkbun, on Porkbun's nameservers.
 
 ## Email
 
-`apps@bysteed.com` on Proton Mail, with catch-all on, so any other name at the domain lands in the same inbox. Replies always go out from `apps@`.
+`apps@bysteed.com` on Proton Mail, with catch-all on, so any other name at the domain lands in the same inbox. Each app publishes its own name (`shift@`, `stallion@`). Replies always go out from `apps@`.
