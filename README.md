@@ -4,7 +4,8 @@ Jorick's personal maker site: a landing page for his apps, later a blog. "Steed"
 
 ## How it works
 
-- Hand-written HTML and CSS. No build step, no framework.
+- Hand-written HTML and CSS, no framework. The one exception is Shift's product pages (`shift/index.html`, `shift/<code>/index.html`): the Shift repository generates them from its App Store metadata (`scripts/build_product_pages.py` there), and the output is committed here. Do not edit them by hand.
+- No build step at deploy time. `404.html` at the root serves every missing path.
 - GitHub Pages serves `main` from the repo root. **A push is live immediately.**
 - `CNAME` holds `bysteed.com`. The domain is verified on Jorick's GitHub account.
 - Preview locally with any static server from the repo root (links are root-relative), for example `python3 -m http.server 8898`.
@@ -18,7 +19,7 @@ Jorick's personal maker site: a landing page for his apps, later a blog. "Steed"
 
 ## URL layout
 
-Per-app pages live under paths: `/<app>/`, `/<app>/privacy/`, `/<app>/support/`. Translated pages go inside the app's folder, `/<app>/<code>/privacy/` and `/<app>/<code>/support/`, never in a language folder at the root. The app's own repo documents its pages (Shift: `Shift/AGENTS.md`). Each app folder may carry its own styling; Shift's pages must look like Shift, never like AtlasDays or this landing page.
+Per-app pages live under paths: `/<app>/`, `/<app>/privacy/`, `/<app>/support/`. Translated pages go inside the app's folder, `/<app>/<code>/`, `/<app>/<code>/privacy/` and `/<app>/<code>/support/`, never in a language folder at the root. The app's own repo documents its pages (Shift: `Shift/AGENTS.md`). Each app folder may carry its own styling; Shift's pages must look like Shift, never like AtlasDays or this landing page.
 
 ## DNS
 
