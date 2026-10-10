@@ -21,3 +21,5 @@ ul { padding-left: 20px; margin: 0 0 12px; }
 a { color: var(--accent); }
 .updated { color: var(--muted); font-size: 14px; text-align: center; margin-top: 28px; }
 .updated a { color: inherit; }
+.soon { display: inline-block; margin: 14px 0 0; padding: 4px 14px; border-radius: 999px; background: var(--card); color: var(--accent); font-size: 15px; font-weight: 700; }
+.intro { margin-top: 18px; font-weight: 600; }

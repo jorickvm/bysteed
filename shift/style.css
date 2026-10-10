@@ -1,0 +1,180 @@
+/* Shift's product page. Its own look, after the app: system background, rounded type, and the work/rest/repeat colors. The privacy and support pages use privacy/styles.css instead. */
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --card: #f2f2f7;
+  --text: #000000;
+  --muted: rgba(60, 60, 67, 0.60);
+  --link: #007aff;
+  --work: #00af7e;
+  --rest: #e44151;
+  --repeat: #f5a216;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #000000;
+    --card: #1c1c1e;
+    --text: #ffffff;
+    --muted: rgba(235, 235, 245, 0.60);
+    --link: #0a84ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.5 ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 16px 48px;
+}
+
+h1, h2, p { margin: 0; }
+
+header { text-align: center; }
+
+.icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  box-shadow: 0 0 0 1px var(--card);
+}
+
+h1 {
+  margin-top: 16px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.lede {
+  max-width: 30em;
+  margin: 10px auto 0;
+  color: var(--muted);
+}
+
+.store {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--bg);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.store:hover { opacity: 0.85; }
+.store:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+
+.shots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 48px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.shots img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
+section {
+  max-width: 34em;
+  margin: 0 auto 32px;
+}
+
+h2 {
+  margin-bottom: 8px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+section p + p { margin-top: 12px; }
+section p, .list { color: var(--muted); }
+
+.steps {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+  color: var(--text) !important;
+  font-weight: 600;
+}
+
+.steps span::before {
+  content: "";
+  display: inline-block;
+  width: 0.55em;
+  height: 0.55em;
+  margin-right: 0.35em;
+  border-radius: 50%;
+  vertical-align: 0.1em;
+}
+
+.steps .work::before { background: var(--work); }
+.steps .rest::before { background: var(--rest); }
+.steps .repeat::before { background: var(--repeat); }
+
+.list {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.list li + li { margin-top: 4px; }
+
+a { color: var(--link); }
+
+footer {
+  margin-top: 48px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+footer nav a { text-decoration: none; }
+footer p a { color: inherit; }
+
+/* On a phone the screenshots scroll sideways instead of shrinking to thumbnails. */
+@media (max-width: 560px) {
+  main { padding-top: 48px; }
+  .shots {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 62%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin: 40px -16px;
+    padding: 0 16px;
+    scroll-padding: 0 16px;
+    scrollbar-width: none;
+  }
+  .shots li { scroll-snap-align: start; }
+}
