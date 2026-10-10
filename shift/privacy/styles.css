@@ -147,8 +147,45 @@ a:focus-visible {
 
 /* A link back to the product page, centered under the text. */
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
   margin-top: 40px;
-  text-align: center;
   font-size: 15px;
   font-weight: 600;
+}
+
+/* bysteed's light and dark switch (/assets/theme.js), a sun and a moon so it needs no translation. */
+.theme-switch {
+  display: flex;
+  gap: 2px;
+}
+
+.theme-switch button {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.theme-switch button:hover,
+.theme-switch button[aria-pressed="true"] { color: var(--primary); }
+.theme-switch button[aria-pressed="true"] { background: rgba(120, 120, 128, 0.16); }
+.theme-switch button:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+
+.theme-switch svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
