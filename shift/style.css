@@ -184,18 +184,16 @@ footer nav {
 footer nav a { text-decoration: none; }
 footer p a { color: inherit; }
 
-/* bysteed's light and dark switch: one word naming the other theme (/assets/theme.js). */
+/* bysteed's light and dark switch: one word naming the other theme (/assets/theme.js), styled as the links beside it. */
 .theme-toggle {
   padding: 0;
   border: 0;
   background: none;
-  color: inherit;
+  color: var(--link);
   font: inherit;
-  text-decoration: underline;
   cursor: pointer;
 }
 
-.theme-toggle:hover { color: var(--text); }
 .theme-toggle:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 
 :root[data-theme="dark"] .light-only,

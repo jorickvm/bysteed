@@ -156,17 +156,16 @@ footer {
   font-weight: 600;
 }
 
-/* bysteed's light and dark switch: one word naming the other theme (/assets/theme.js). */
+/* bysteed's light and dark switch: one word naming the other theme (/assets/theme.js), styled as the links beside it. */
 .theme-toggle {
   padding: 0;
   border: 0;
   background: none;
-  color: var(--secondary);
+  color: var(--link);
   font: inherit;
   cursor: pointer;
 }
 
-.theme-toggle:hover { color: var(--primary); }
 .theme-toggle:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 
 :root[data-theme="dark"] .light-only,
