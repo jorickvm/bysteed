@@ -39,7 +39,7 @@ Jorick's personal maker site: a landing page for his apps, later a blog. "Steed"
 - No em-dashes in user-facing copy.
 - Each app's one-liner is approved by Jorick; do not reword it without asking.
 - Icons in `assets/icons/` are 192px exports of each app's App Store icon, square and full-bleed (the page rounds the corners), each with a `-dark` variant for dark mode. Do not commit 1024px originals.
-  - `atlasdays-dark.png` is the app's dark icon cropped 32px per side at 1024px, because the source has its own light rim and corners baked in.
+  - `atlasdays-dark.png` is the app's dark icon, resized like the light one: since AtlasDays 2.7 the source has clean dark corners, so it needs no crop.
   - `stallion-dark.png` is the app's dark icon composited on Stallion's dark card colour (`#1A2333`), preserving its position in the light icon. The Stallion repository's `scripts/export_brand_assets.py --web-output <directory>` exports both icons, transparent light/dark page logos and the product link preview. Both Stallion appearances use the same brighter horse. Header variants remain selected through `.light-only` and `.dark-only` so the visitor's theme choice is respected.
   - Jorick asked for both variants on 2026-10-10.
 
