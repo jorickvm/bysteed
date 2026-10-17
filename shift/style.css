@@ -79,6 +79,24 @@ h1 {
   letter-spacing: -0.03em;
 }
 
+/* Keep the existing heading and its layout for accessibility and every locale.
+   The app's transparent wordmark follows the site's chosen light/dark theme. */
+@supports (mask-image: url("/shift/wordmark.png")) or (-webkit-mask-image: url("/shift/wordmark.png")) {
+  .lockup h1 {
+    position: relative;
+    color: transparent;
+  }
+
+  .lockup h1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--text);
+    -webkit-mask: url("/shift/wordmark.png") left center / contain no-repeat;
+    mask: url("/shift/wordmark.png") left center / contain no-repeat;
+  }
+}
+
 .lede {
   max-width: 30em;
   margin: 10px auto 0;

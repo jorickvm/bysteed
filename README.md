@@ -42,6 +42,12 @@ Jorick's personal maker site: a landing page for his apps, later a blog. "Steed"
   - `atlasdays-dark.png` is the app's dark icon, resized like the light one: since AtlasDays 2.7 the source has clean dark corners, so it needs no crop.
   - `stallion-dark.png` is the app's dark icon composited on Stallion's dark card colour (`#1A2333`), preserving its position in the light icon. The Stallion repository's `scripts/export_brand_assets.py --web-output <directory>` exports both icons, transparent light/dark page logos and the product link preview. Both Stallion appearances use the same brighter horse. Header variants remain selected through `.light-only` and `.dark-only` so the visitor's theme choice is respected.
   - Jorick asked for both variants on 2026-10-10.
+- Shift's product-page heading uses `shift/wordmark.png`, the transparent
+  lettering from the app's shared `ShiftBrandWordmark` asset. The shared product
+  stylesheet applies it as a mask in the current text colour, keeping the
+  accessible heading text and the three dots' existing layout in every locale.
+  Export Shift's icons from the app's light/dark AppIcon assets at 192px, its
+  product link preview at 512px, and redraw the homepage preview when they change.
 
 ## URL layout
 
