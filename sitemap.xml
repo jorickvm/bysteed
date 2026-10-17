@@ -45,6 +45,8 @@
   <url><loc>https://bysteed.com/shift/ar/support/</loc></url>
   <url><loc>https://bysteed.com/shift/bg/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/bg/support/</loc></url>
+  <url><loc>https://bysteed.com/shift/bn/privacy/</loc></url>
+  <url><loc>https://bysteed.com/shift/bn/support/</loc></url>
   <url><loc>https://bysteed.com/shift/ca/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/ca/support/</loc></url>
   <url><loc>https://bysteed.com/shift/cs/privacy/</loc></url>
@@ -61,6 +63,8 @@
   <url><loc>https://bysteed.com/shift/fi/support/</loc></url>
   <url><loc>https://bysteed.com/shift/fr/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/fr/support/</loc></url>
+  <url><loc>https://bysteed.com/shift/gu/privacy/</loc></url>
+  <url><loc>https://bysteed.com/shift/gu/support/</loc></url>
   <url><loc>https://bysteed.com/shift/he/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/he/support/</loc></url>
   <url><loc>https://bysteed.com/shift/hi/privacy/</loc></url>
@@ -77,16 +81,26 @@
   <url><loc>https://bysteed.com/shift/ja/support/</loc></url>
   <url><loc>https://bysteed.com/shift/ka/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/ka/support/</loc></url>
+  <url><loc>https://bysteed.com/shift/kn/privacy/</loc></url>
+  <url><loc>https://bysteed.com/shift/kn/support/</loc></url>
   <url><loc>https://bysteed.com/shift/ko/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/ko/support/</loc></url>
   <url><loc>https://bysteed.com/shift/lt/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/lt/support/</loc></url>
+  <url><loc>https://bysteed.com/shift/ml/privacy/</loc></url>
+  <url><loc>https://bysteed.com/shift/ml/support/</loc></url>
+  <url><loc>https://bysteed.com/shift/mr/privacy/</loc></url>
+  <url><loc>https://bysteed.com/shift/mr/support/</loc></url>
   <url><loc>https://bysteed.com/shift/ms/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/ms/support/</loc></url>
   <url><loc>https://bysteed.com/shift/nl/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/nl/support/</loc></url>
   <url><loc>https://bysteed.com/shift/no/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/no/support/</loc></url>
+  <url><loc>https://bysteed.com/shift/or/privacy/</loc></url>
+  <url><loc>https://bysteed.com/shift/or/support/</loc></url>
+  <url><loc>https://bysteed.com/shift/pa/privacy/</loc></url>
+  <url><loc>https://bysteed.com/shift/pa/support/</loc></url>
   <url><loc>https://bysteed.com/shift/pl/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/pl/support/</loc></url>
   <url><loc>https://bysteed.com/shift/pt-PT/privacy/</loc></url>
@@ -103,12 +117,18 @@
   <url><loc>https://bysteed.com/shift/sl/support/</loc></url>
   <url><loc>https://bysteed.com/shift/sv/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/sv/support/</loc></url>
+  <url><loc>https://bysteed.com/shift/ta/privacy/</loc></url>
+  <url><loc>https://bysteed.com/shift/ta/support/</loc></url>
+  <url><loc>https://bysteed.com/shift/te/privacy/</loc></url>
+  <url><loc>https://bysteed.com/shift/te/support/</loc></url>
   <url><loc>https://bysteed.com/shift/th/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/th/support/</loc></url>
   <url><loc>https://bysteed.com/shift/tr/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/tr/support/</loc></url>
   <url><loc>https://bysteed.com/shift/uk/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/uk/support/</loc></url>
+  <url><loc>https://bysteed.com/shift/ur/privacy/</loc></url>
+  <url><loc>https://bysteed.com/shift/ur/support/</loc></url>
   <url><loc>https://bysteed.com/shift/vi/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/vi/support/</loc></url>
   <url><loc>https://bysteed.com/shift/zh-Hans/privacy/</loc></url>
