@@ -119,5 +119,11 @@
       <nav><a href="/shift/pa/privacy/">ਪਰਦੇਦਾਰੀ ਨੀਤੀ</a><a href="/shift/pa/support/">ਸਹਾਇਤਾ</a><a href="/">ਹੋਰ ਐਪਾਂ</a><a class="language" href="/shift/" lang="en" hreflang="en">English</a><button type="button" class="theme-toggle" data-theme-toggle><span class="light-only">ਗੂੜ੍ਹਾ</span><span class="dark-only">ਹਲਕਾ</span></button></nav>
     </footer>
   </main>
+  <script>
+    if (/[?&]from=appstore(&|$)/.test(location.search)) {
+      var store = document.querySelector("a.store");
+      store.href = store.href.replace("ct=web", "ct=appstore");
+    }
+  </script>
 </body>
 </html>

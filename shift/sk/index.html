@@ -119,5 +119,11 @@
       <nav><a href="/shift/sk/privacy/">Zásady ochrany súkromia</a><a href="/shift/sk/support/">Podpora</a><a href="/">Ďalšie aplikácie</a><a class="language" href="/shift/" lang="en" hreflang="en">English</a><button type="button" class="theme-toggle" data-theme-toggle><span class="light-only">Tmavý</span><span class="dark-only">Svetlý</span></button></nav>
     </footer>
   </main>
+  <script>
+    if (/[?&]from=appstore(&|$)/.test(location.search)) {
+      var store = document.querySelector("a.store");
+      store.href = store.href.replace("ct=web", "ct=appstore");
+    }
+  </script>
 </body>
 </html>

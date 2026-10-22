@@ -119,5 +119,11 @@
       <nav><a href="/shift/vi/privacy/">Chính sách quyền riêng tư</a><a href="/shift/vi/support/">Hỗ trợ</a><a href="/">Ứng dụng khác</a><a class="language" href="/shift/" lang="en" hreflang="en">English</a><button type="button" class="theme-toggle" data-theme-toggle><span class="light-only">Tối</span><span class="dark-only">Sáng</span></button></nav>
     </footer>
   </main>
+  <script>
+    if (/[?&]from=appstore(&|$)/.test(location.search)) {
+      var store = document.querySelector("a.store");
+      store.href = store.href.replace("ct=web", "ct=appstore");
+    }
+  </script>
 </body>
 </html>

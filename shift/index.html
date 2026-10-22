@@ -120,6 +120,12 @@
     </footer>
   </main>
   <script>
+    if (/[?&]from=appstore(&|$)/.test(location.search)) {
+      var store = document.querySelector("a.store");
+      store.href = store.href.replace("ct=web", "ct=appstore");
+    }
+  </script>
+  <script>
     (function () {
       var pages = {"ar": ["/shift/ar/", "العربية", "ar", "rtl"], "bn": ["/shift/bn/", "বাংলা", "bn", ""], "ca": ["/shift/ca/", "Català", "ca", ""], "cs": ["/shift/cs/", "Čeština", "cs", ""], "da": ["/shift/da/", "Dansk", "da", ""], "de": ["/shift/de/", "Deutsch", "de", ""], "el": ["/shift/el/", "Ελληνικά", "el", ""], "es": ["/shift/es/", "Español", "es", ""], "fi": ["/shift/fi/", "Suomi", "fi", ""], "fr": ["/shift/fr/", "Français", "fr", ""], "gu": ["/shift/gu/", "ગુજરાતી", "gu", ""], "he": ["/shift/he/", "עברית", "he", "rtl"], "hi": ["/shift/hi/", "हिन्दी", "hi", ""], "hr": ["/shift/hr/", "Hrvatski", "hr", ""], "hu": ["/shift/hu/", "Magyar", "hu", ""], "id": ["/shift/id/", "Bahasa Indonesia", "id", ""], "it": ["/shift/it/", "Italiano", "it", ""], "ja": ["/shift/ja/", "日本語", "ja", ""], "kn": ["/shift/kn/", "ಕನ್ನಡ", "kn", ""], "ko": ["/shift/ko/", "한국어", "ko", ""], "ml": ["/shift/ml/", "മലയാളം", "ml", ""], "mr": ["/shift/mr/", "मराठी", "mr", ""], "ms": ["/shift/ms/", "Bahasa Melayu", "ms", ""], "nl": ["/shift/nl/", "Nederlands", "nl", ""], "no": ["/shift/no/", "Norsk", "nb", ""], "or": ["/shift/or/", "ଓଡ଼ିଆ", "or", ""], "pa": ["/shift/pa/", "ਪੰਜਾਬੀ", "pa", ""], "pl": ["/shift/pl/", "Polski", "pl", ""], "pt": ["/shift/pt/", "Português", "pt-BR", ""], "pt-PT": ["/shift/pt-PT/", "Português", "pt-PT", ""], "ro": ["/shift/ro/", "Română", "ro", ""], "ru": ["/shift/ru/", "Русский", "ru", ""], "sk": ["/shift/sk/", "Slovenčina", "sk", ""], "sl": ["/shift/sl/", "Slovenščina", "sl", ""], "sv": ["/shift/sv/", "Svenska", "sv", ""], "ta": ["/shift/ta/", "தமிழ்", "ta", ""], "te": ["/shift/te/", "తెలుగు", "te", ""], "th": ["/shift/th/", "ไทย", "th", ""], "tr": ["/shift/tr/", "Türkçe", "tr", ""], "uk": ["/shift/uk/", "Українська", "uk", ""], "ur": ["/shift/ur/", "اردو", "ur", "rtl"], "vi": ["/shift/vi/", "Tiếng Việt", "vi", ""], "zh-Hans": ["/shift/zh-Hans/", "简体中文", "zh-Hans", ""], "zh-Hant": ["/shift/zh-Hant/", "繁體中文", "zh-Hant", ""]};
       function page(tag) {
