@@ -133,6 +133,19 @@ h1 {
   border-radius: 18px;
 }
 
+/* English-only Duo artwork, exported from the approved website composition. */
+.duo-artwork {
+  display: block;
+  margin: 0 0 48px;
+}
+
+.duo-artwork img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
 section {
   max-width: 34em;
   margin: 0 auto 32px;
