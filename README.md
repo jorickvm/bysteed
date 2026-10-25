@@ -49,9 +49,23 @@ Jorick's personal maker site: a landing page for his apps, later a blog. "Steed"
   Export Shift's icons from the app's light/dark AppIcon assets at 192px, its
   product link preview at 512px, and redraw the homepage preview when they change.
 
+## Shift pages
+
+Shift's repository owns the Store copy and the privacy claims; this repository owns how the pages look and behave.
+
+- **Inventory:** `shift/privacy/` and `shift/support/` in English, and the same pair under `shift/<code>/` for each language with an App Store listing. The folders under `shift/` are the inventory.
+- **Privacy and support pages** are hand-written; edit them in place. They are indexable (Jorick, 2026-10-10), carry a self-canonical URL and no `hreflang` alternates, and all use `shift/privacy/styles.css`. Bump the `?v=` on that stylesheet link in every page when it changes.
+- **Privacy page look:** mirror the app's `PrivacyPolicyView` sheet: plain system background, one narrow text column, rounded typography, primary and secondary label colours, light or dark by the system unless the visitor chose. No hero, brand header, cards, pills, numbered sections, gradients or workout colours. The claims come from `Shift/Views/PrivacyPolicyView.swift` in the Shift repository.
+- **Footer on privacy and support pages** (Jorick, 2026-10-10): centred, a "Shift" link to the language's product page (the English one where the language has none) and the light and dark switch.
+- **Product pages** are generated (see How it works). Their hand-written strings are `STORE_BUTTON`, `LANGUAGE_NAME`, `MORE_APPS` and `THEME_WORD` in the generator. They share `shift/style.css`, are indexable and carry `hreflang` alternates. They may use the workout colours (the setup screen's work and rest glows).
+  - Footer: one row of links: Privacy, Support, More apps, the language link and the theme word. A translated page links to English; the English page shows the visitor's browser language when it has a page, nothing otherwise, and never redirects.
+  - The App Store button carries the campaign `web`. The listing's marketing URL ends in `?from=appstore`, which switches it to `appstore` (`STORE_SCRIPT` in the generator), so `web` counts only web visitors.
+  - After a screenshot upload, the Shift repository reruns the generator with `--fetch-screenshots`, which fills `shift/screenshots/<code>/`.
+- **Support email** is `shift@bysteed.com` (see Email). Builds up to 2.5 still show `shift@atlasdays.app`, which keeps working as a catch-all.
+
 ## URL layout
 
-Per-app pages live under paths: `/<app>/`, `/<app>/privacy/`, `/<app>/support/`. Translated pages go inside the app's folder, `/<app>/<code>/`, `/<app>/<code>/privacy/` and `/<app>/<code>/support/`, never in a language folder at the root. The app's own repo documents its pages (Shift: `Shift/AGENTS.md`). Each app folder may carry its own styling; Shift's pages must look like Shift, never like AtlasDays or this landing page.
+Per-app pages live under paths: `/<app>/`, `/<app>/privacy/`, `/<app>/support/`. Translated pages go inside the app's folder, `/<app>/<code>/`, `/<app>/<code>/privacy/` and `/<app>/<code>/support/`, never in a language folder at the root. Each app's page rules live here (Shift: Shift pages above). Each app folder may carry its own styling; Shift's pages must look like Shift, never like AtlasDays or this landing page.
 
 ## DNS
 
