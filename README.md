@@ -69,7 +69,7 @@ Per-app pages live under paths: `/<app>/`, `/<app>/privacy/`, `/<app>/support/`.
 
 ## Stallion pages
 
-Hand-written, in Stallion's own look (`stallion/style.css`). The App Store button on `stallion/` carries the campaign `web`, and `?from=appstore` switches it to `appstore`, as on Shift's product pages; that only matters once the listing's marketing URL points at `https://bysteed.com/stallion/?from=appstore`.
+Hand-written, in Stallion's own look (`stallion/style.css`). The App Store button on `stallion/` carries the campaign `web`, and `?from=appstore` switches it to `appstore`, as on Shift's product pages; that only matters once the listing's marketing URL points at `https://bysteed.com/stallion/?from=appstore`. The screenshots in `stallion/screenshots/` are the App Store set, exported by the Stallion repository's `scripts/compose_store_screenshots.swift --web-output <this repository>`; their `alt` text is each shot's caption.
 
 ## DNS
 

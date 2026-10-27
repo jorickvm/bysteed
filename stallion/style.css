@@ -27,3 +27,8 @@ a { color: var(--accent); }
 .store:hover { opacity: 0.85; }
 .store:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .intro { margin-top: 18px; font-weight: 600; }
+/* The Store screenshots: one row, wider than the text on a wide window, swiped through on a narrow one. */
+.shots { display: grid; grid-auto-flow: column; grid-auto-columns: min(62%, 240px); gap: 14px; margin: 0 -16px 28px; padding: 0 16px; list-style: none; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 16px; scrollbar-width: none; }
+.shots li { margin: 0; scroll-snap-align: start; }
+.shots img { display: block; width: 100%; height: auto; border-radius: 16px; }
+@media (min-width: 960px) { .shots { grid-auto-columns: 1fr; margin: 0 -136px 32px; padding: 0; overflow: visible; } }
