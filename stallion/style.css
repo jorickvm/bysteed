@@ -23,5 +23,7 @@ a { color: var(--accent); }
 .theme-toggle { padding: 0; border: 0; background: none; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; }
 .theme-toggle:hover { color: var(--text); }
 :root[data-theme="dark"] .light-only, :root:not([data-theme="dark"]) .dark-only { display: none; }
-.soon { display: inline-block; margin: 14px 0 0; padding: 4px 14px; border-radius: 999px; background: var(--card); color: var(--accent); font-size: 15px; font-weight: 700; }
+.store { display: inline-block; margin: 18px 0 2px; padding: 10px 22px; border-radius: 999px; background: var(--accent); color: var(--bg); font-weight: 700; text-decoration: none; }
+.store:hover { opacity: 0.85; }
+.store:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .intro { margin-top: 18px; font-weight: 600; }

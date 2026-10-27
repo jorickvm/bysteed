@@ -65,7 +65,11 @@ Shift's repository owns the Store copy and the privacy claims; this repository o
 
 ## URL layout
 
-Per-app pages live under paths: `/<app>/`, `/<app>/privacy/`, `/<app>/support/`. Translated pages go inside the app's folder, `/<app>/<code>/`, `/<app>/<code>/privacy/` and `/<app>/<code>/support/`, never in a language folder at the root. Each app's page rules live here (Shift: Shift pages above). Each app folder may carry its own styling; Shift's pages must look like Shift, never like AtlasDays or this landing page.
+Per-app pages live under paths: `/<app>/`, `/<app>/privacy/`, `/<app>/support/`. Translated pages go inside the app's folder, `/<app>/<code>/`, `/<app>/<code>/privacy/` and `/<app>/<code>/support/`, never in a language folder at the root. Each app's page rules live here (Shift: Shift pages above; Stallion: below). Each app folder may carry its own styling; Shift's pages must look like Shift, never like AtlasDays or this landing page.
+
+## Stallion pages
+
+Hand-written, in Stallion's own look (`stallion/style.css`). The App Store button on `stallion/` carries the campaign `web`, and `?from=appstore` switches it to `appstore`, as on Shift's product pages; that only matters once the listing's marketing URL points at `https://bysteed.com/stallion/?from=appstore`.
 
 ## DNS
 
