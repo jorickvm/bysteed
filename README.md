@@ -38,6 +38,7 @@ Jorick's personal maker site: a landing page for his apps, later a blog. "Steed"
 - Name on the page: "Jorick", never the full or last name.
 - No em-dashes in user-facing copy.
 - Each app's one-liner is approved by Jorick; do not reword it without asking.
+- App Store buttons start with the Apple logo, as inline SVG (the `` character exists only in Apple's fonts). Jorick's call on 2026-10-27, knowing Apple's trademark guidelines allow the logo only in the official badge; remove it if Apple objects. He does not want the official badge.
 - Icons in `assets/icons/` are 192px exports of each app's App Store icon, square and full-bleed (the page rounds the corners), each with a `-dark` variant for dark mode. Do not commit 1024px originals.
   - `atlasdays-dark.png` is the app's dark icon, resized like the light one: since AtlasDays 2.7 the source has clean dark corners, so it needs no crop.
   - `stallion-dark.png` is the app's dark icon composited on Stallion's dark card colour (`#1A2333`), preserving its position in the light icon. The Stallion repository's `scripts/export_brand_assets.py --web-output <directory>` exports both icons, transparent light/dark page logos and the product link preview. Both Stallion appearances use the same brighter horse. Header variants remain selected through `.light-only` and `.dark-only` so the visitor's theme choice is respected.
@@ -71,7 +72,7 @@ Per-app pages live under paths: `/<app>/`, `/<app>/privacy/`, `/<app>/support/`.
 
 ## Stallion pages
 
-Hand-written, in Stallion's own look (`stallion/style.css`). Every Stallion page has the App Store button, with the campaign `web`. On `stallion/`, `?from=appstore` switches it to `appstore`, as on Shift's product pages; that only matters once the listing's marketing URL points at `https://bysteed.com/stallion/?from=appstore`. The screenshots in `stallion/screenshots/` are the App Store set, exported by the Stallion repository's `scripts/compose_store_screenshots.swift --web-output <this repository>`; their `alt` text is each shot's caption.
+Hand-written, in Stallion's own look (`stallion/style.css`). Every Stallion page has the App Store button, with the campaign `web`, and a footer of two centred lines: what the page states (the product page's facts, or the date it was updated), then "Apps by Steed" and the theme word (Jorick, 2026-10-27). On `stallion/`, `?from=appstore` switches it to `appstore`, as on Shift's product pages; that only matters once the listing's marketing URL points at `https://bysteed.com/stallion/?from=appstore`. The screenshots in `stallion/screenshots/` are the App Store set, exported by the Stallion repository's `scripts/compose_store_screenshots.swift --web-output <this repository>`; their `alt` text is each shot's caption.
 
 ## DNS
 
