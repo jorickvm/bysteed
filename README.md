@@ -57,7 +57,9 @@ Shift's repository owns the Store copy and the privacy claims; this repository o
 - **Privacy and support pages** are hand-written; edit them in place. They are indexable (Jorick, 2026-10-10), carry a self-canonical URL and no `hreflang` alternates, and all use `shift/privacy/styles.css`. Bump the `?v=` on that stylesheet link in every page when it changes.
 - **Privacy page look:** mirror the app's `PrivacyPolicyView` sheet: plain system background, one narrow text column, rounded typography, primary and secondary label colours, light or dark by the system unless the visitor chose. No hero, brand header, cards, pills, numbered sections, gradients or workout colours. The claims come from `Shift/Views/PrivacyPolicyView.swift` in the Shift repository.
 - **Footer on privacy and support pages** (Jorick, 2026-10-10): centred, a "Shift" link to the language's product page (the English one where the language has none) and the light and dark switch.
+- **The dots at the top of privacy and support pages** link to the same product page as the footer's "Shift" link (Jorick, 2026-10-27).
 - **Product pages** are generated (see How it works). Their hand-written strings are `STORE_BUTTON`, `LANGUAGE_NAME`, `MORE_APPS` and `THEME_WORD` in the generator. They share `shift/style.css`, are indexable and carry `hreflang` alternates. They may use the workout colours (the setup screen's work and rest glows).
+  - The heading's lockup, dots and wordmark together, links to the page's own address, as a site's logo does (Jorick, 2026-10-27).
   - Footer: one row of links: Privacy, Support, More apps, the language link and the theme word. A translated page links to English; the English page shows the visitor's browser language when it has a page, nothing otherwise, and never redirects.
   - The App Store button carries the campaign `web`. The listing's marketing URL ends in `?from=appstore`, which switches it to `appstore` (`STORE_SCRIPT` in the generator), so `web` counts only web visitors.
   - After a screenshot upload, the Shift repository reruns the generator with `--fetch-screenshots`, which fills `shift/screenshots/<code>/`.
@@ -69,7 +71,7 @@ Per-app pages live under paths: `/<app>/`, `/<app>/privacy/`, `/<app>/support/`.
 
 ## Stallion pages
 
-Hand-written, in Stallion's own look (`stallion/style.css`). The App Store button on `stallion/` carries the campaign `web`, and `?from=appstore` switches it to `appstore`, as on Shift's product pages; that only matters once the listing's marketing URL points at `https://bysteed.com/stallion/?from=appstore`. The screenshots in `stallion/screenshots/` are the App Store set, exported by the Stallion repository's `scripts/compose_store_screenshots.swift --web-output <this repository>`; their `alt` text is each shot's caption.
+Hand-written, in Stallion's own look (`stallion/style.css`). Every Stallion page has the App Store button, with the campaign `web`. On `stallion/`, `?from=appstore` switches it to `appstore`, as on Shift's product pages; that only matters once the listing's marketing URL points at `https://bysteed.com/stallion/?from=appstore`. The screenshots in `stallion/screenshots/` are the App Store set, exported by the Stallion repository's `scripts/compose_store_screenshots.swift --web-output <this repository>`; their `alt` text is each shot's caption.
 
 ## DNS
 

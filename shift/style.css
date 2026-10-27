@@ -64,6 +64,15 @@ header { text-align: center; }
   justify-items: start;
   gap: calc(var(--title) * 0.2156);
   direction: ltr;
+  /* A link to the page's own address, like a site's logo; it keeps the text colour. */
+  color: inherit;
+  text-decoration: none;
+}
+
+.lockup:focus-visible {
+  border-radius: 6px;
+  outline: 2px solid var(--link);
+  outline-offset: 6px;
 }
 
 .dots {
