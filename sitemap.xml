@@ -49,8 +49,17 @@
   <url><loc>https://bysteed.com/shift/vi/</loc></url>
   <url><loc>https://bysteed.com/shift/zh-Hans/</loc></url>
   <url><loc>https://bysteed.com/shift/zh-Hant/</loc></url>
+  <url><loc>https://bysteed.com/stallion/de/</loc></url>
+  <url><loc>https://bysteed.com/stallion/es/</loc></url>
+  <url><loc>https://bysteed.com/stallion/fr/</loc></url>
+  <url><loc>https://bysteed.com/stallion/ja/</loc></url>
+  <url><loc>https://bysteed.com/stallion/ko/</loc></url>
+  <url><loc>https://bysteed.com/stallion/nl/</loc></url>
   <url><loc>https://bysteed.com/stallion/privacy/</loc></url>
+  <url><loc>https://bysteed.com/stallion/ru/</loc></url>
   <url><loc>https://bysteed.com/stallion/support/</loc></url>
+  <url><loc>https://bysteed.com/stallion/zh-hans/</loc></url>
+  <url><loc>https://bysteed.com/stallion/zh-hant/</loc></url>
   <url><loc>https://bysteed.com/shift/ar/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/ar/support/</loc></url>
   <url><loc>https://bysteed.com/shift/bg/privacy/</loc></url>
@@ -145,4 +154,22 @@
   <url><loc>https://bysteed.com/shift/zh-Hans/support/</loc></url>
   <url><loc>https://bysteed.com/shift/zh-Hant/privacy/</loc></url>
   <url><loc>https://bysteed.com/shift/zh-Hant/support/</loc></url>
+  <url><loc>https://bysteed.com/stallion/de/privacy/</loc></url>
+  <url><loc>https://bysteed.com/stallion/de/support/</loc></url>
+  <url><loc>https://bysteed.com/stallion/es/privacy/</loc></url>
+  <url><loc>https://bysteed.com/stallion/es/support/</loc></url>
+  <url><loc>https://bysteed.com/stallion/fr/privacy/</loc></url>
+  <url><loc>https://bysteed.com/stallion/fr/support/</loc></url>
+  <url><loc>https://bysteed.com/stallion/ja/privacy/</loc></url>
+  <url><loc>https://bysteed.com/stallion/ja/support/</loc></url>
+  <url><loc>https://bysteed.com/stallion/ko/privacy/</loc></url>
+  <url><loc>https://bysteed.com/stallion/ko/support/</loc></url>
+  <url><loc>https://bysteed.com/stallion/nl/privacy/</loc></url>
+  <url><loc>https://bysteed.com/stallion/nl/support/</loc></url>
+  <url><loc>https://bysteed.com/stallion/ru/privacy/</loc></url>
+  <url><loc>https://bysteed.com/stallion/ru/support/</loc></url>
+  <url><loc>https://bysteed.com/stallion/zh-hans/privacy/</loc></url>
+  <url><loc>https://bysteed.com/stallion/zh-hans/support/</loc></url>
+  <url><loc>https://bysteed.com/stallion/zh-hant/privacy/</loc></url>
+  <url><loc>https://bysteed.com/stallion/zh-hant/support/</loc></url>
 </urlset>

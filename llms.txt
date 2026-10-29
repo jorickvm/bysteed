@@ -13,11 +13,11 @@ An interval timer for workouts, for iPhone and iPad. Set work, rest and rounds, 
 
 ## Stallion
 
-A training journal for Apple Health workouts, for iPhone. It shows each workout recorded by Apple Watch or another app and keeps a note per workout, or per day when a day has no workout. No account and no ads; notes stay on the iPhone, with optional backups to the user's own iCloud Drive. English only. Free on the App Store, with one optional purchase.
+A training journal for Apple Health workouts, for iPhone. It shows each workout recorded by Apple Watch or another app and keeps a note per workout, or per day when a day has no workout. No account and no ads; notes stay on the iPhone, with optional backups to the user's own iCloud Drive. In English, Chinese (Simplified and Traditional), Dutch, French, German, Japanese, Korean, Russian and Spanish. Free on the App Store, with one optional purchase.
 
-- [Stallion](https://bysteed.com/stallion/): product page
-- [Stallion privacy policy](https://bysteed.com/stallion/privacy/)
-- [Stallion support](https://bysteed.com/stallion/support/): email stallion@bysteed.com
+- [Stallion](https://bysteed.com/stallion/): product page, also in each of its languages under /stallion/<code>/
+- [Stallion privacy policy](https://bysteed.com/stallion/privacy/), also under /stallion/<code>/privacy/
+- [Stallion support](https://bysteed.com/stallion/support/), also under /stallion/<code>/support/: email stallion@bysteed.com
 - [Stallion on the App Store](https://apps.apple.com/app/id6816050020)
 
 ## AtlasDays

@@ -7,6 +7,17 @@
   <meta name="theme-color" content="#FAFBFF" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#101722" media="(prefers-color-scheme: dark)" />
   <link rel="canonical" href="https://bysteed.com/stallion/" />
+  <link rel="alternate" hreflang="en" href="https://bysteed.com/stallion/" />
+  <link rel="alternate" hreflang="de" href="https://bysteed.com/stallion/de/" />
+  <link rel="alternate" hreflang="es" href="https://bysteed.com/stallion/es/" />
+  <link rel="alternate" hreflang="fr" href="https://bysteed.com/stallion/fr/" />
+  <link rel="alternate" hreflang="ja" href="https://bysteed.com/stallion/ja/" />
+  <link rel="alternate" hreflang="ko" href="https://bysteed.com/stallion/ko/" />
+  <link rel="alternate" hreflang="nl" href="https://bysteed.com/stallion/nl/" />
+  <link rel="alternate" hreflang="ru" href="https://bysteed.com/stallion/ru/" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://bysteed.com/stallion/zh-hans/" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://bysteed.com/stallion/zh-hant/" />
+  <link rel="alternate" hreflang="x-default" href="https://bysteed.com/stallion/" />
   <title>Stallion: Workout Journal</title>
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Steed" />
@@ -56,7 +67,7 @@
 
     <footer class="updated">
       <p>No account. No ads. For iPhone, iOS 27 or later.</p>
-      <p><a href="/">Apps by Steed</a> · <button type="button" class="theme-toggle" data-theme-toggle><span class="light-only">Dark</span><span class="dark-only">Light</span></button></p>
+      <p><a href="/">Apps by Steed</a><span class="language" hidden> · <a></a></span> · <button type="button" class="theme-toggle" data-theme-toggle><span class="light-only">Dark</span><span class="dark-only">Light</span></button></p>
     </footer>
   </main>
   <script>
@@ -64,6 +75,32 @@
       var store = document.querySelector("a.store");
       store.href = store.href.replace("ct=web", "ct=appstore");
     }
+  </script>
+  <script>
+    // The footer names the visitor's browser language when Stallion has a page in it, before English in their list; it never redirects.
+    (function () {
+      var pages = {"de": ["/stallion/de/", "Deutsch", "de"], "es": ["/stallion/es/", "Español", "es"], "fr": ["/stallion/fr/", "Français", "fr"], "ja": ["/stallion/ja/", "日本語", "ja"], "ko": ["/stallion/ko/", "한국어", "ko"], "nl": ["/stallion/nl/", "Nederlands", "nl"], "ru": ["/stallion/ru/", "Русский", "ru"], "zh-hans": ["/stallion/zh-hans/", "简体中文", "zh-Hans"], "zh-hant": ["/stallion/zh-hant/", "繁體中文", "zh-Hant"]};
+      function page(tag) {
+        tag = tag.toLowerCase();
+        var base = tag.split("-")[0];
+        if (base === "zh") return /-(hant|tw|hk|mo)(-|$)/.test(tag) ? "zh-hant" : "zh-hans";
+        return base;
+      }
+      var tags = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+      for (var i = 0; i < tags.length; i++) {
+        var code = page(tags[i]);
+        if (code === "en") return;
+        var target = pages[code];
+        if (!target) continue;
+        var language = document.querySelector("footer .language"), link = language.querySelector("a");
+        link.href = target[0];
+        link.textContent = target[1];
+        link.lang = target[2];
+        link.hreflang = target[2];
+        language.hidden = false;
+        return;
+      }
+    })();
   </script>
 </body>
 </html>
