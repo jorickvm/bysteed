@@ -62,7 +62,7 @@ Shift's repository owns the Store copy and the privacy claims; this repository o
 - **Product pages** are generated (see How it works). Their hand-written strings are `STORE_BUTTON`, `LANGUAGE_NAME`, `MORE_APPS` and `THEME_WORD` in the generator. They share `shift/style.css`, are indexable and carry `hreflang` alternates. They may use the workout colours (the setup screen's work and rest glows).
   - The heading's lockup, dots and wordmark together, links to the page's own address, as a site's logo does (Jorick, 2026-10-27).
   - Footer: one row of links: Privacy, Support, More apps, the language link and the theme word. A translated page links to English; the English page shows the visitor's browser language when it has a page, nothing otherwise, and never redirects.
-  - The App Store button carries the campaign `web`. The listing's marketing URL ends in `?from=appstore`, which switches it to `appstore` (`STORE_SCRIPT` in the generator), so `web` counts only web visitors.
+  - The App Store button's campaign names where the visitor came from, so App Store Connect's Campaigns view shows the source (`STORE_SCRIPT` in the generator): `appstore` when the URL has `?from=appstore`, which the listing's marketing URL adds; else the `utm_source` (`chatgpt.com` gives `chatgpt`); else the referring site (`www.google.com` gives `google`). The tab keeps it in `sessionStorage` across pages. `web` is left for visitors with no known source, such as links opened from apps.
   - After a screenshot upload, the Shift repository reruns the generator with `--fetch-screenshots`, which fills `shift/screenshots/<code>/`.
 - **Support email** is `shift@bysteed.com` (see Email). Builds up to 2.5 still show `shift@atlasdays.app`, which keeps working as a catch-all.
 

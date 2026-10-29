@@ -120,10 +120,21 @@
     </footer>
   </main>
   <script>
-    if (/[?&]from=appstore(&|$)/.test(location.search)) {
-      var store = document.querySelector("a.store");
-      store.href = store.href.replace("ct=web", "ct=appstore");
-    }
+    (function () {
+      var source = "", match;
+      try {
+        if (/[?&]from=appstore(&|$)/.test(location.search)) source = "appstore";
+        else if ((match = /[?&]utm_source=([^&#]+)/.exec(location.search))) source = decodeURIComponent(match[1]);
+        else if (document.referrer && new URL(document.referrer).hostname !== location.hostname) source = new URL(document.referrer).hostname;
+        source = source.toLowerCase().replace(/^(www|m|l|lm)\./, "").replace(/\.[a-z]+$/, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 40);
+        if (source) sessionStorage.setItem("shift-campaign", source);
+        else source = sessionStorage.getItem("shift-campaign") || "";
+      } catch (e) {}
+      if (source) {
+        var store = document.querySelector("a.store");
+        store.href = store.href.replace("ct=web", "ct=" + source);
+      }
+    })();
   </script>
 </body>
 </html>
