@@ -72,7 +72,7 @@ Per-app pages live under paths: `/<app>/`, `/<app>/privacy/`, `/<app>/support/`.
 
 ## Stallion pages
 
-Hand-written, in Stallion's own look (`stallion/style.css`). Every Stallion page has the App Store button, with the campaign `web`, and a footer of two centred lines: what the page states (the product page's facts, or the date it was updated), then "Apps by Steed" and the theme word (Jorick, 2026-10-27). On `stallion/`, `?from=appstore` switches it to `appstore`, as on Shift's product pages; that only matters once the listing's marketing URL points at `https://bysteed.com/stallion/?from=appstore`. The screenshots in `stallion/screenshots/` are the App Store set, exported by the Stallion repository's `scripts/compose_store_screenshots.swift --web-output <this repository>`; their `alt` text is each shot's caption.
+Hand-written, in Stallion's own look (`stallion/style.css`). Every Stallion page has the App Store button, with the campaign `web`, and a footer of two centred lines: what the page states (the product page's facts, or the date it was updated), then "Apps by Steed" and the theme word (Jorick, 2026-10-27). On `stallion/`, `?from=appstore` switches it to `appstore`, as on Shift's product pages; that only matters once the listing's marketing URL points at `https://bysteed.com/stallion/?from=appstore`. The screenshots in `stallion/screenshots/` are the App Store set, designed in the Figma file Stallion and written by the Stallion repository's `scripts/stage_store_screenshots.swift <export folder> --web-output <this repository>`; their `alt` text is each shot's caption.
 
 ## DNS
 
