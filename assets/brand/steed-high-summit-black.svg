@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-labelledby="steed-black-title">
+  <title id="steed-black-title">Steed: High summit, near-black</title>
+  <defs>
+    <mask id="steed-black-trail" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+      <rect width="32" height="32" fill="white"/>
+      <path d="M9 30C12 25 23 25 23 22C23 20 12 22 12 18.5C12 16 20 16 21 12L21 5L22 10C23 16 15 18 15 19C15 20 27 18 27 22C27 26 18 27 16 30Z" fill="black"/>
+    </mask>
+  </defs>
+  <path d="M1 28 10 13 14 16 21 5 31 28Z" fill="#111112" mask="url(#steed-black-trail)"/>
+</svg>
