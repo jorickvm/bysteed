@@ -35,8 +35,10 @@ a { color: var(--accent); }
 .store .apple { width: 1.05em; height: 1.05em; fill: currentColor; translate: 0 -0.08em; }
 .store:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .intro { margin-top: 18px; font-weight: var(--semibold); }
-/* The Store screenshots: one row, wider than the text on a wide window, swiped through on a narrow one. */
-.shots { display: grid; grid-auto-flow: column; grid-auto-columns: min(62%, 240px); gap: 14px; margin: 0 -16px 28px; padding: 0 16px; list-style: none; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 16px; scrollbar-width: none; }
+/* The Store panorama stays joined in a row, with horizontal scrolling on narrow screens. */
+.shots { display: grid; grid-auto-flow: column; grid-auto-columns: min(62%, 240px); gap: 0; margin: 0 -16px 28px; padding: 0 16px; list-style: none; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 16px; scrollbar-width: none; }
 .shots li { margin: 0; scroll-snap-align: start; }
-.shots img { display: block; width: 100%; height: auto; border-radius: 16px; }
+.shots img { display: block; width: 100%; height: auto; }
+.shots li:first-child img { border-radius: 16px 0 0 16px; }
+.shots li:last-child img { border-radius: 0 16px 16px 0; }
 @media (min-width: 960px) { .shots { grid-auto-columns: 1fr; margin: 0 -136px 32px; padding: 0; overflow: visible; } }
