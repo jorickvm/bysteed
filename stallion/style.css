@@ -44,3 +44,7 @@ a { color: var(--accent); }
 .shots li:first-child img { border-radius: 16px 0 0 16px; }
 .shots li:last-child img { border-radius: 0 16px 16px 0; }
 @media (min-width: 960px) { .shots { grid-auto-columns: 1fr; margin: 0 -136px 32px; padding: 0; overflow: visible; } }
+
+.product-type { display: block; font-size: 23px; line-height: 1.3; margin-top: 6px; text-wrap: balance; }
+.hero-description { max-width: 560px; margin: 16px auto 0; text-wrap: pretty; }
+h3 { font-size: 17px; font-weight: var(--bold); margin: 18px 0 6px; }

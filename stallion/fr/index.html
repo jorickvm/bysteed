@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Stallion réunit tes séances de Santé et tes propres mots dans un journal d’entraînement tout simple." />
+  <meta name="description" content="Ajoute des notes à tes séances de Santé avec Stallion, un journal pour iPhone. Retrouve tes entraînements et garde une trace de tes sensations." />
   <meta name="theme-color" content="#FAFBFF" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#101722" media="(prefers-color-scheme: dark)" />
   <link rel="canonical" href="https://bysteed.com/stallion/fr/" />
@@ -18,11 +18,11 @@
   <link rel="alternate" hreflang="zh-Hans" href="https://bysteed.com/stallion/zh-hans/" />
   <link rel="alternate" hreflang="zh-Hant" href="https://bysteed.com/stallion/zh-hant/" />
   <link rel="alternate" hreflang="x-default" href="https://bysteed.com/stallion/" />
-  <title>Stallion&nbsp;: Journal de sport</title>
+  <title>Stallion : Journal d’entraînement pour Santé sur iPhone</title>
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Steed" />
-  <meta property="og:title" content="Stallion&nbsp;: Journal de sport" />
-  <meta property="og:description" content="Stallion réunit tes séances de Santé et tes propres mots dans un journal d’entraînement tout simple." />
+  <meta property="og:title" content="Stallion : Journal d’entraînement pour Santé sur iPhone" />
+  <meta property="og:description" content="Ajoute des notes à tes séances de Santé avec Stallion, un journal pour iPhone. Retrouve tes entraînements et garde une trace de tes sensations." />
   <meta property="og:url" content="https://bysteed.com/stallion/fr/" />
   <meta property="og:image" content="https://bysteed.com/assets/og/stallion.jpg" />
   <meta property="og:image:width" content="512" />
@@ -31,9 +31,42 @@
   <link rel="icon" href="/assets/icons/stallion.png" type="image/png" />
   <link rel="apple-touch-icon" href="/assets/icons/stallion.png" />
   <link rel="preload" href="/stallion/Quicksand.ttf" as="font" type="font/ttf" crossorigin />
-  <link rel="stylesheet" href="/stallion/style.css?v=1.3" />
+  <link rel="stylesheet" href="/stallion/style.css?v=1.3-seo" />
   <script src="/assets/theme.js"></script>
   <script defer src="/assets/analytics.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "@id": "https://bysteed.com/stallion/#app",
+  "name": "Stallion : Journal de sport",
+  "description": "Ajoute des notes à tes séances de Santé avec Stallion, un journal pour iPhone. Retrouve tes entraînements et garde une trace de tes sensations.",
+  "url": "https://bysteed.com/stallion/fr/",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "iOS 27.0",
+  "image": "https://bysteed.com/assets/og/stallion.jpg",
+  "downloadUrl": "https://apps.apple.com/app/id6816050020",
+  "inLanguage": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "nl",
+    "ru",
+    "zh-Hans",
+    "zh-Hant"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "url": "https://apps.apple.com/us/app/id6816050020",
+    "description": "Journal d’entraînement gratuit avec un achat facultatif et unique pour les sauvegardes automatiques et les exports."
+  }
+}
+  </script>
 </head>
 <body>
   <main>
@@ -42,8 +75,9 @@
         <img class="light-only" src="/stallion/logo.png" alt="" width="132" height="114" />
         <img class="dark-only" src="/stallion/logo-dark.png" alt="" width="132" height="114" />
       </a>
-      <h1>Stallion</h1>
+      <h1>Stallion<span class="product-type">Un journal d’entraînement pour Santé</span></h1>
       <p class="lede">Garde en mémoire plus que les chiffres.</p>
+      <p class="hero-description">Ajoute des notes aux séances enregistrées avec l’Apple Watch et les autres apps qui écrivent dans Santé. Garde la charge soulevée, tes sensations pendant une course ou tes idées pour la prochaine fois à côté de chaque séance.</p>
       <a class="store" href="https://apps.apple.com/app/apple-store/id6816050020?pt=128618782&amp;ct=web&amp;mt=8"><svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>Gratuit sur l’App Store</a>
       <nav><a href="/stallion/fr/" aria-current="page">À propos</a><a href="/stallion/fr/privacy/">Confidentialité</a><a href="/stallion/fr/support/">Assistance</a></nav>
     </header>
@@ -55,15 +89,31 @@
     </ul>
 
     <section>
-      <p class="intro">Stallion réunit tes séances de Santé et tes propres mots dans un journal d’entraînement tout simple. Note la charge soulevée, le parcours suivi, ce qui a bien marché ou ce que tu veux essayer la prochaine fois.</p>
-      <h2>Tout ton entraînement au même endroit</h2>
-      <p>Parcours les séances enregistrées par l’Apple Watch et par les autres apps qui écrivent dans Santé. Écris une note pour chaque séance, et pour les jours de repos aussi.</p>
-      <h2>Retrouve ce que tu as fait la dernière fois</h2>
-      <p>Cherche un exercice, une séance, un lieu ou un détail dont tu te souviens. Filtre par activité et utilise le calendrier pour revenir à un jour précédent.</p>
-      <h2>Regarde de plus près</h2>
-      <p>Consulte la durée, la distance, la fréquence cardiaque et les autres détails enregistrés pendant tes séances. Explore les parcours et les zones de fréquence cardiaque, et évalue l’effort ressenti.</p>
-      <h2>Garde tes mots</h2>
-      <p>Tes notes restent sur ton iPhone. L’Écurie, un achat facultatif qui t’appartient pour toujours, les sauvegarde automatiquement dans ton propre iCloud Drive.</p>
+      <h2>Tes séances de Santé, avec une place pour tes mots</h2>
+      <p>Connecte Stallion à Santé et parcours les séances que tu as déjà enregistrées. Écris une note pour chaque séance, ou pour un jour de repos.</p>
+      <h2>Retrouve la séance dont tu te souviens</h2>
+      <p>Cherche un exercice, un lieu ou un détail dans ton historique d’entraînement et tes notes. Filtre par activité ou utilise le calendrier pour revenir à un jour précédent.</p>
+      <h2>Écris tant que la séance est encore fraîche</h2>
+      <p>Active les notifications d’entraînement pour que Stallion te propose d’écrire une note après une séance. Maintiens le doigt sur la notification pour écrire sans ouvrir Stallion.</p>
+      <h2>Les chiffres à côté de ta note</h2>
+      <p>Consulte la durée, la distance, la fréquence cardiaque, les parcours enregistrés et les zones de fréquence cardiaque si la séance d’origine contient ces données. Évalue l’effort ressenti et enregistre ce score dans Santé.</p>
+      <h2>Un journal d’entraînement privé sur ton iPhone</h2>
+      <p>Tes notes restent sur ton iPhone. Sans compte ni publicité. L’Écurie, un achat facultatif payé une seule fois et valable à vie, permet de sauvegarder automatiquement ton journal dans ton propre iCloud Drive et de l’exporter.</p>
+    </section>
+
+    <section aria-labelledby="questions">
+      <h2 id="questions">Questions sur Stallion</h2>
+      <h3>Puis-je ajouter des notes aux séances de l’Apple Watch ?</h3>
+      <p>Oui. Autorise Stallion à lire tes séances dans Santé, ouvre une séance et écris ta note. Elle reste associée à cette séance dans Stallion.</p>
+      <h3>Mes notes apparaîtront-elles dans Santé ou Forme ?</h3>
+      <p>Tes notes sont conservées dans Stallion. Seul le score d’effort que tu attribues à une séance est enregistré dans Santé.</p>
+      <h3>Faut-il une Apple Watch ?</h3>
+      <p>Stallion fonctionne avec les séances enregistrées par l’Apple Watch ou une autre app qui les sauvegarde dans Santé. Les détails disponibles dépendent des données enregistrées et de l’accès à Santé que tu autorises.</p>
+      <h3>Puis-je enregistrer une séance dans Stallion ?</h3>
+      <p>Enregistre ta séance avec l’Apple Watch ou une autre app d’entraînement, puis garde tes notes dans Stallion. Tu peux noter les séries, les répétitions et les charges dans une note. Stallion ne propose pas de suivi structuré des exercices et n’enregistre pas lui-même les séances.</p>
+      <h3>Stallion est-il gratuit ?</h3>
+      <p>Consulter tes séances, écrire des notes et rechercher dans ton historique est gratuit. L’Écurie est un achat facultatif et unique pour les sauvegardes automatiques et les exports. Il n’y a pas d’abonnement.</p>
+      <p>Une autre question ? <a href="/stallion/fr/support/">Obtenir de l’aide pour Stallion</a>.</p>
     </section>
 
     <footer class="updated">
