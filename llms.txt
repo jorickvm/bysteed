@@ -7,8 +7,8 @@
 An interval timer for workouts, for iPhone and iPad. Set work, rest and rounds, tap Start. Free, with no ads, paywall, subscription, account or tracking. Workouts stay on the device.
 
 - [Shift](https://bysteed.com/shift/): product page, also in every app language under /shift/<code>/; regional variants share a page
-- [Shift privacy policy](https://bysteed.com/shift/privacy/)
-- [Shift support](https://bysteed.com/shift/support/): email shift@bysteed.com
+- [Shift privacy policy](https://bysteed.com/shift/privacy/): also under /shift/<code>/privacy/ for every app language
+- [Shift support](https://bysteed.com/shift/support/): also under /shift/<code>/support/ for every app language; email shift@bysteed.com
 - [Shift on the App Store](https://apps.apple.com/app/id6805132734)
 
 ## Stallion
